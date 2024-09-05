@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class Horizontal : Controller {
@@ -33,7 +32,7 @@ public class Horizontal : Controller {
         rigidbody = GetComponent<Rigidbody>();
 
         targetPositions = new List<Vector3>();
-        foreach (var target in targets) {
+        foreach (Transform target in targets) {
             targetPositions.Add(target.position);
         }
     }
